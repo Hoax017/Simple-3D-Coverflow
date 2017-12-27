@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Carousel</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no"/>
+		<link rel="stylesheet" type="text/css" href="skin_classic_black.css">
+	</head>
+
+	<body>
+		<!-- div used as a holder for the coverflow -->
+		<div id="myDiv"></div>
+
+		<select>
+			<option onclick="setPreset(1)">Preset 1</option>
+			<option onclick="setPreset(2)">Preset 2</option>
+			<option onclick="setPreset(3)">Preset 3</option>
+			<option onclick="setPreset(4)">Preset 4</option>
+			<option onclick="setPreset(5)">Preset 5</option>
+			<option onclick="setPreset(6)">Preset 6</option>
+			<option onclick="setPreset(7)">Preset 7</option>
+			<option onclick="setPreset(8)">Preset 8</option>
+			<option onclick="setPreset(9)">Preset 9</option>
+		</select>
+		<!-- coverflow data -->
+		<ul id="playList2SingleCat" style="display: none;">
+
+			<!-- category  -->
+			<ul data-cat="+ Category one">
+				<ul>
+					<li data-url="link:http://www.google.com" data-target="_blank"></li>
+					<li data-thumbnail-path="http://www.webdesign-flash.ro/p/s3dcov/load/media/thumbnails/1.jpg"></li>
+					<li data-thumbnail-text="">
+						<p class="largeLabel">CUSTOM PRESS THUMBNAIL ACTION</p>
+						<p class="smallLabel">When a thumbnail is pressed the coverflow can open a browser window or the lightbox.</p>
+					</li>
+					<li data-info="">
+						<p class="mediaDescriptionHeader">CUSTOM PRESS THUMBNAIL ACTION.</p>
+						<p class="mediaDescriptionText">When a thumbnail is pressed the coverflow can open a browser window or the lightbox.</p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-url="http://www.webdesign-flash.ro/p/s3dcov/load/media/images/2.jpg"></li>
+					<li data-thumbnail-path="http://www.webdesign-flash.ro/p/s3dcov/load/media/thumbnails/2.jpg"></li>
+					<li data-thumbnail-text="">
+						<p class="largeLabel">RESPONSIVE LAYOUT</p>
+						<p class="smallLabel">The coverflow has RESPONSIVE LAYOUT</p>
+					</li>
+					<li data-info="">
+						<p class="mediaDescriptionHeader">RESPONSIVE LAYOUT</p>
+						<p class="mediaDescriptionText">The coverflow has responsive layout, basically it has an adaptable layout which makes it the perfect candidate for any type of project.</p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-url="http://www.webdesign-flash.ro/p/s3dcov/load/media/videos/video-desktop.mp4,load/media/videos/video-mobile.mp4" data-poster-path="http://www.webdesign-flash.ro/p/s3dcov/load/media/posters/video-desktop.jpg" data-width="900" data-height="506">cc</li>
+					<li data-thumbnail-path="http://www.webdesign-flash.ro/p/s3dcov/load/media/thumbnails/3.jpg"></li>
+					<li data-thumbnail-text="">
+						<p class="largeLabel">REVOLUTION LIGHTBOX INCLUDED</p>
+						<p class="smallLabel">Full blown multimedia responsive lightbox included.</p>
+					</li>
+					<li data-info="">
+						<p class="mediaDescriptionHeader">REVOLUTION LIGHTBOX INCLUDED.</p>
+						<p class="mediaDescriptionText">Full blown multimedia responsive lightbox included, it runs on all major browsers and mobile devices like iPhone, iPad, iOS, Android and Windows desktop or mobile. It has support for image (jpg, jpeg, png, video (mp4), audio (mp3), Vimeo, YouTube, iFrame, Google maps and flash.</p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-url="http://www.webdesign-flash.ro/p/s3dcov/load/media/audio/audio.mp3"></li>
+					<li data-thumbnail-path="http://www.webdesign-flash.ro/p/s3dcov/load/media/thumbnails/4.jpg"></li>
+					<li data-thumbnail-text="">
+						<p class="largeLabel">OUTSTANDING PERFORMANCE</p>
+						<p class="smallLabel">High performance using OOP and the latest CSS techniques.</p>
+					</li>
+					<li data-info="">
+						<p class="mediaDescriptionHeader">OUTSTANDING PERFORMANCE.</p>
+						<p class="mediaDescriptionText">High performance using OOP code and the latest CSS techniques, ready for mobile with swipe and pinch support, very flexible, easy to setup and extremely customizable.</p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-url="https://www.youtube.com/watch?v=9bZkp7q19f0" data-width="1000" data-height="550"></li>
+					<li data-thumbnail-path="http://www.webdesign-flash.ro/p/s3dcov/load/media/thumbnails/5.jpg"></li>
+					<li data-thumbnail-text="">
+						<p class="largeLabel">VIMEO, YOUTUBE, HTML5 VIDEO!</p>
+						<p class="smallLabel">Revolution lightbox can load and play videos from Youtube, Vimeo or HTML5.</p>
+					</li>
+					<li data-info="">
+						<p class="mediaDescriptionHeader">VIMEO, YOUTUBE, HTML5 VIDEO!</p>
+						<p class="mediaDescriptionText">All you have to do is to include the link from YouTube, Vimeo or mp4 video that you want to display and the lightbox will display and play your video. The size (width and height) of each video can be set easily.</p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-url="http://vimeo.com/50747914" data-width="900" data-height="550"></li>
+					<li data-thumbnail-path="http://www.webdesign-flash.ro/p/s3dcov/load/media/thumbnails/6.jpg"></li>
+					<li data-thumbnail-text="">
+						<p class="largeLabel">CUSTOMIZABLE SKIN AND COLOR</p>
+						<p class="smallLabel">The entire color theme can be modified.</p>
+					</li>
+					<li data-info="">
+						<p class="mediaDescriptionHeader">CUSTOMIZABLE SKIN AND COLOR.</p>
+						<p class="mediaDescriptionText">The entire color theme can be modified, and also the skin can be replaced with your own.</p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-url="http://www.webdesign-flash.ro/p/s3dcov/load/media/images/7.jpg"></li>
+					<li data-thumbnail-path="http://www.webdesign-flash.ro/p/s3dcov/load/media/thumbnails/7.jpg"></li>
+					<li data-thumbnail-text="">
+						<p class="largeLabel">CUSTOM TEXT FORMATTED WITH CSS</p>
+						<p class="smallLabel">Full css support, the text which appear over the thumbnail can be formatted  with CSS.</p>
+					</li>
+					<li data-info="">
+						<p class="mediaDescriptionHeader">CUSTOM TEXT FORMATTED WITH CSS</p>
+						<p class="mediaDescriptionText">Full css support, the text which appear over the thumbnail can be formatted  with CSS.</p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-url="http://www.webdesign-flash.ro/iframe.html" data-width="900" data-height="650"></li>
+					<li data-thumbnail-path="http://www.webdesign-flash.ro/p/s3dcov/load/media/thumbnails/8.jpg"></li>
+					<li data-thumbnail-text="">
+						<p class="largeLabel">IFRAME SUPPORT!</p>
+						<p class="smallLabel">The lightbox can load a HTML page and display it with ease.</p>
+					</li>
+					<li data-info="">
+						<p class="mediaDescriptionHeader">IFRAME SUPPORT!</p>
+						<p class="mediaDescriptionText">The lightbox can load a HTML page and display it with ease. All you have to do is to include the link of the HTML page and the lightbox will display it. The HTML page size (width and height) can be easily set.</p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-url="http://www.webdesign-flash.ro/p/s3dcov/load/media/flash/fwd.swf" data-width="800" data-height="500"></li>
+					<li data-thumbnail-path="http://www.webdesign-flash.ro/p/s3dcov/load/media/thumbnails/9.jpg"></li>
+					<li data-thumbnail-text="">
+						<p class="largeLabel">CUSTOM TEXT CAN BE ADDED HERE</p>
+						<p class="smallLabel">Full css support, the text which appears here.</p>
+					</li>
+					<li data-info="">
+						<p class="mediaDescriptionHeader">CUSTOM TEXT CAN BE ADDED HERE AND FORMATTED WITH CSS</p>
+						<p class="mediaDescriptionText">Full css support, the text which appear over the thumbnail can be formatted  with CSS.</p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-url="https://www.google.com/maps/embed/v1/place?q=castelul%20hunedoara&key=..." data-width="1100" data-height="650"></li>
+					<li data-thumbnail-path="http://www.webdesign-flash.ro/p/s3dcov/load/media/thumbnails/10.jpg"></li>
+					<li data-thumbnail-text="">
+						<p class="largeLabel">THUMBNAILS DESCRIPTION</p>
+						<p class="smallLabel">Each thumbnail can have optional short description.</p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-url="link:http://www.google.com" data-target="_blank"></li>
+					<li data-thumbnail-path="http://www.webdesign-flash.ro/p/s3dcov/load/media/thumbnails/11.jpg"></li>
+					<li data-thumbnail-text="">
+						<p class="largeLabel">CUSTOM PRESS THUMBNAIL ACTION</p>
+						<p class="smallLabel">When a thumbnail is pressed the coverflow can open a browser window or the lightbox.</p>
+					</li>
+					<li data-info="">
+						<p class="mediaDescriptionHeader">CUSTOM PRESS THUMBNAIL ACTION.</p>
+						<p class="mediaDescriptionText">When a thumbnail is pressed the coverflow can open a browser window or the lightbox.</p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-url="http://www.webdesign-flash.ro/p/s3dcov/load/media/images/12.jpg"></li>
+					<li data-thumbnail-path="http://www.webdesign-flash.ro/p/s3dcov/load/media/thumbnails/12.jpg"></li>
+					<li data-thumbnail-text="">
+						<p class="largeLabel">RESPONSIVE LAYOUT</p>
+						<p class="smallLabel">The coverflow has RESPONSIVE LAYOUT</p>
+					</li>
+					<li data-info="">
+						<p class="mediaDescriptionHeader">RESPONSIVE LAYOUT</p>
+						<p class="mediaDescriptionText">The coverflow has responsive layout, basically it has an adaptable layout which makes it the perfect candidate for any type of project.</p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-url="http://www.webdesign-flash.ro/p/s3dcov/load/media/videos/video-desktop.mp4,load/media/videos/video-mobile.mp4" data-poster-path="http://www.webdesign-flash.ro/p/s3dcov/load/media/posters/video-desktop.jpg" data-width="900" data-height="506">cc</li>
+					<li data-thumbnail-path="http://www.webdesign-flash.ro/p/s3dcov/load/media/thumbnails/13.jpg"></li>
+					<li data-thumbnail-text="">
+						<p class="largeLabel">REVOLUTION LIGHTBOX INCLUDED</p>
+						<p class="smallLabel">Full blown multimedia responsive lightbox included.</p>
+					</li>
+					<li data-info="">
+						<p class="mediaDescriptionHeader">REVOLUTION LIGHTBOX INCLUDED.</p>
+						<p class="mediaDescriptionText">Full blown multimedia responsive lightbox included, it runs on all major browsers and mobile devices like iPhone, iPad, iOS, Android and Windows desktop or mobile. It has support for image (jpg, jpeg, png, video (mp4), audio (mp3), Vimeo, YouTube, iFrame, Google maps and flash.</p>
+					</li>
+				</ul>
+			</ul>
+			<ul data-cat="+ Category two">
+				<ul>
+					<li data-url="link:http://www.google.com" data-target="_blank"></li>
+					<li data-thumbnail-path="http://www.webdesign-flash.ro/p/s3dcov/load/media/thumbnails/1.jpg"></li>
+					<li data-thumbnail-text="">
+						<p class="largeLabel">CUSTOM PRESS THUMBNAIL ACTION</p>
+						<p class="smallLabel">When a thumbnail is pressed the coverflow can open a browser window or the lightbox.</p>
+					</li>
+					<li data-info="">
+						<p class="mediaDescriptionHeader">CUSTOM PRESS THUMBNAIL ACTION.</p>
+						<p class="mediaDescriptionText">When a thumbnail is pressed the coverflow can open a browser window or the lightbox.</p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-url="http://www.webdesign-flash.ro/p/s3dcov/load/media/images/2.jpg"></li>
+					<li data-thumbnail-path="http://www.webdesign-flash.ro/p/s3dcov/load/media/thumbnails/2.jpg"></li>
+					<li data-thumbnail-text="">
+						<p class="largeLabel">RESPONSIVE LAYOUT</p>
+						<p class="smallLabel">The coverflow has RESPONSIVE LAYOUT</p>
+					</li>
+					<li data-info="">
+						<p class="mediaDescriptionHeader">RESPONSIVE LAYOUT</p>
+						<p class="mediaDescriptionText">The coverflow has responsive layout, basically it has an adaptable layout which makes it the perfect candidate for any type of project.</p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-url="http://www.webdesign-flash.ro/p/s3dcov/load/media/videos/video-desktop.mp4,load/media/videos/video-mobile.mp4" data-poster-path="http://www.webdesign-flash.ro/p/s3dcov/load/media/posters/video-desktop.jpg" data-width="900" data-height="506">cc</li>
+					<li data-thumbnail-path="http://www.webdesign-flash.ro/p/s3dcov/load/media/thumbnails/3.jpg"></li>
+					<li data-thumbnail-text="">
+						<p class="largeLabel">REVOLUTION LIGHTBOX INCLUDED</p>
+						<p class="smallLabel">Full blown multimedia responsive lightbox included.</p>
+					</li>
+					<li data-info="">
+						<p class="mediaDescriptionHeader">REVOLUTION LIGHTBOX INCLUDED.</p>
+						<p class="mediaDescriptionText">Full blown multimedia responsive lightbox included, it runs on all major browsers and mobile devices like iPhone, iPad, iOS, Android and Windows desktop or mobile. It has support for image (jpg, jpeg, png, video (mp4), audio (mp3), Vimeo, YouTube, iFrame, Google maps and flash.</p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-url="http://www.webdesign-flash.ro/p/s3dcov/load/media/audio/audio.mp3"></li>
+					<li data-thumbnail-path="http://www.webdesign-flash.ro/p/s3dcov/load/media/thumbnails/4.jpg"></li>
+					<li data-thumbnail-text="">
+						<p class="largeLabel">OUTSTANDING PERFORMANCE</p>
+						<p class="smallLabel">High performance using OOP and the latest CSS techniques.</p>
+					</li>
+					<li data-info="">
+						<p class="mediaDescriptionHeader">OUTSTANDING PERFORMANCE.</p>
+						<p class="mediaDescriptionText">High performance using OOP code and the latest CSS techniques, ready for mobile with swipe and pinch support, very flexible, easy to setup and extremely customizable.</p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-url="https://www.youtube.com/watch?v=9bZkp7q19f0" data-width="1000" data-height="550"></li>
+					<li data-thumbnail-path="http://www.webdesign-flash.ro/p/s3dcov/load/media/thumbnails/5.jpg"></li>
+					<li data-thumbnail-text="">
+						<p class="largeLabel">VIMEO, YOUTUBE, HTML5 VIDEO!</p>
+						<p class="smallLabel">Revolution lightbox can load and play videos from Youtube, Vimeo or HTML5.</p>
+					</li>
+					<li data-info="">
+						<p class="mediaDescriptionHeader">VIMEO, YOUTUBE, HTML5 VIDEO!</p>
+						<p class="mediaDescriptionText">All you have to do is to include the link from YouTube, Vimeo or mp4 video that you want to display and the lightbox will display and play your video. The size (width and height) of each video can be set easily.</p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-url="http://vimeo.com/50747914" data-width="900" data-height="550"></li>
+					<li data-thumbnail-path="http://www.webdesign-flash.ro/p/s3dcov/load/media/thumbnails/6.jpg"></li>
+					<li data-thumbnail-text="">
+						<p class="largeLabel">CUSTOMIZABLE SKIN AND COLOR</p>
+						<p class="smallLabel">The entire color theme can be modified.</p>
+					</li>
+					<li data-info="">
+						<p class="mediaDescriptionHeader">CUSTOMIZABLE SKIN AND COLOR.</p>
+						<p class="mediaDescriptionText">The entire color theme can be modified, and also the skin can be replaced with your own.</p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-url="http://www.webdesign-flash.ro/p/s3dcov/load/media/images/7.jpg"></li>
+					<li data-thumbnail-path="http://www.webdesign-flash.ro/p/s3dcov/load/media/thumbnails/7.jpg"></li>
+					<li data-thumbnail-text="">
+						<p class="largeLabel">CUSTOM TEXT FORMATTED WITH CSS</p>
+						<p class="smallLabel">Full css support, the text which appear over the thumbnail can be formatted  with CSS.</p>
+					</li>
+					<li data-info="">
+						<p class="mediaDescriptionHeader">CUSTOM TEXT FORMATTED WITH CSS</p>
+						<p class="mediaDescriptionText">Full css support, the text which appear over the thumbnail can be formatted  with CSS.</p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-url="http://www.webdesign-flash.ro/iframe.html" data-width="900" data-height="650"></li>
+					<li data-thumbnail-path="http://www.webdesign-flash.ro/p/s3dcov/load/media/thumbnails/8.jpg"></li>
+					<li data-thumbnail-text="">
+						<p class="largeLabel">IFRAME SUPPORT!</p>
+						<p class="smallLabel">The lightbox can load a HTML page and display it with ease.</p>
+					</li>
+					<li data-info="">
+						<p class="mediaDescriptionHeader">IFRAME SUPPORT!</p>
+						<p class="mediaDescriptionText">The lightbox can load a HTML page and display it with ease. All you have to do is to include the link of the HTML page and the lightbox will display it. The HTML page size (width and height) can be easily set.</p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-url="http://www.webdesign-flash.ro/p/s3dcov/load/media/flash/fwd.swf" data-width="800" data-height="500"></li>
+					<li data-thumbnail-path="http://www.webdesign-flash.ro/p/s3dcov/load/media/thumbnails/9.jpg"></li>
+					<li data-thumbnail-text="">
+						<p class="largeLabel">CUSTOM TEXT CAN BE ADDED HERE</p>
+						<p class="smallLabel">Full css support, the text which appears here.</p>
+					</li>
+					<li data-info="">
+						<p class="mediaDescriptionHeader">CUSTOM TEXT CAN BE ADDED HERE AND FORMATTED WITH CSS</p>
+						<p class="mediaDescriptionText">Full css support, the text which appear over the thumbnail can be formatted  with CSS.</p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-url="https://www.google.com/maps/embed/v1/place?q=castelul%20hunedoara&key=..." data-width="1100" data-height="650"></li>
+					<li data-thumbnail-path="http://www.webdesign-flash.ro/p/s3dcov/load/media/thumbnails/10.jpg"></li>
+					<li data-thumbnail-text="">
+						<p class="largeLabel">THUMBNAILS DESCRIPTION</p>
+						<p class="smallLabel">Each thumbnail can have optional short description.</p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-url="link:http://www.google.com" data-target="_blank"></li>
+					<li data-thumbnail-path="http://www.webdesign-flash.ro/p/s3dcov/load/media/thumbnails/11.jpg"></li>
+					<li data-thumbnail-text="">
+						<p class="largeLabel">CUSTOM PRESS THUMBNAIL ACTION</p>
+						<p class="smallLabel">When a thumbnail is pressed the coverflow can open a browser window or the lightbox.</p>
+					</li>
+					<li data-info="">
+						<p class="mediaDescriptionHeader">CUSTOM PRESS THUMBNAIL ACTION.</p>
+						<p class="mediaDescriptionText">When a thumbnail is pressed the coverflow can open a browser window or the lightbox.</p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-url="http://www.webdesign-flash.ro/p/s3dcov/load/media/images/12.jpg"></li>
+					<li data-thumbnail-path="http://www.webdesign-flash.ro/p/s3dcov/load/media/thumbnails/12.jpg"></li>
+					<li data-thumbnail-text="">
+						<p class="largeLabel">RESPONSIVE LAYOUT</p>
+						<p class="smallLabel">The coverflow has RESPONSIVE LAYOUT</p>
+					</li>
+					<li data-info="">
+						<p class="mediaDescriptionHeader">RESPONSIVE LAYOUT</p>
+						<p class="mediaDescriptionText">The coverflow has responsive layout, basically it has an adaptable layout which makes it the perfect candidate for any type of project.</p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-url="http://www.webdesign-flash.ro/p/s3dcov/load/media/videos/video-desktop.mp4,load/media/videos/video-mobile.mp4" data-poster-path="http://www.webdesign-flash.ro/p/s3dcov/load/media/posters/video-desktop.jpg" data-width="900" data-height="506">cc</li>
+					<li data-thumbnail-path="http://www.webdesign-flash.ro/p/s3dcov/load/media/thumbnails/13.jpg"></li>
+					<li data-thumbnail-text="">
+						<p class="largeLabel">REVOLUTION LIGHTBOX INCLUDED</p>
+						<p class="smallLabel">Full blown multimedia responsive lightbox included.</p>
+					</li>
+					<li data-info="">
+						<p class="mediaDescriptionHeader">REVOLUTION LIGHTBOX INCLUDED.</p>
+						<p class="mediaDescriptionText">Full blown multimedia responsive lightbox included, it runs on all major browsers and mobile devices like iPhone, iPad, iOS, Android and Windows desktop or mobile. It has support for image (jpg, jpeg, png, video (mp4), audio (mp3), Vimeo, YouTube, iFrame, Google maps and flash.</p>
+					</li>
+				</ul>
+			</ul>
+			<ul data-cat="+ Category tree">
+
+				<ul>
+					<li data-url="link:http://www.google.com" data-target="_blank"></li>
+					<li data-thumbnail-path="http://www.webdesign-flash.ro/p/s3dcov/load/media/thumbnails2/8.jpg" data-thumbnail-width="380" data-thumbnail-height="280"></li>
+					<li data-thumbnail-text="">
+						<p class="largeLabel">CUSTOM THUMBNAIL ACTION</p>
+						<p class="smallLabel">When a thumbnail is pressed the coverflow can open a browser window or the lightbox.</p>
+					</li>
+					<li data-info="">
+						<p class="mediaDescriptionHeader">CUSTOM PRESS THUMBNAIL ACTION.</p>
+						<p class="mediaDescriptionText">When a thumbnail is pressed the coverflow can open a browser window or the lightbox.</p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-url="http://www.webdesign-flash.ro/p/s3dcov/load/media/images2/1.jpg"></li>
+					<li data-thumbnail-path="http://www.webdesign-flash.ro/p/s3dcov/load/media/thumbnails2/1.jpg" data-thumbnail-width="280" data-thumbnail-height="380"></li>
+					<li data-thumbnail-text="">
+						<p class="largeLabel">RESPONSIVE LAYOUT</p>
+						<p class="smallLabel">The coverflow has RESPONSIVE LAYOUT</p>
+					</li>
+					<li data-info="">
+						<p class="mediaDescriptionHeader">RESPONSIVE LAYOUT</p>
+						<p class="mediaDescriptionText">The coverflow has responsive layout, basically it has an adaptable layout which makes it the perfect candidate for any type of project.</p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-url="http://www.webdesign-flash.ro/p/s3dcov/load/media/videos/video-desktop.mp4,load/media/videos/video-mobile.mp4" data-poster-path="http://www.webdesign-flash.ro/p/s3dcov/load/media/posters/video-desktop.jpg" data-width="900" data-height="506"></li>
+					<li data-thumbnail-path="http://www.webdesign-flash.ro/p/s3dcov/load/media/thumbnails2/12.jpg" data-thumbnail-width="380" data-thumbnail-height="280"></li>
+					<li data-thumbnail-text="">
+						<p class="largeLabel">REVOLUTION LIGHTBOX INCLUDED</p>
+						<p class="smallLabel">Full blown multimedia responsive lightbox included.</p>
+					</li>
+					<li data-info="">
+						<p class="mediaDescriptionHeader">REVOLUTION LIGHTBOX INCLUDED.</p>
+						<p class="mediaDescriptionText">Full blown multimedia responsive lightbox included, it runs on all major browsers and mobile devices like iPhone, iPad, iOS, Android and Windows desktop or mobile. It has support for image (jpg, jpeg, png, video (mp4), audio (mp3), Vimeo, YouTube, iFrame, Google maps and flash.</p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-url="http://www.webdesign-flash.ro/p/s3dcov/load/media/audio/audio.mp3"></li>
+					<li data-thumbnail-path="http://www.webdesign-flash.ro/p/s3dcov/load/media/thumbnails2/3.jpg" data-thumbnail-width="280" data-thumbnail-height="380"></li>
+					<li data-thumbnail-text="">
+						<p class="largeLabel">OUTSTANDING PERFORMANCE</p>
+						<p class="smallLabel">High performance using OOP and the latest CSS techniques.</p>
+					</li>
+					<li data-info="">
+						<p class="mediaDescriptionHeader">OUTSTANDING PERFORMANCE.</p>
+						<p class="mediaDescriptionText">High performance using OOP code and the latest CSS techniques, ready for mobile with swipe and pinch support, very flexible, easy to setup and extremely customizable.</p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-url="https://www.youtube.com/watch?v=9bZkp7q19f0" data-width="1000" data-height="550"></li>
+					<li data-thumbnail-path="http://www.webdesign-flash.ro/p/s3dcov/load/media/thumbnails2/7.jpg" data-thumbnail-width="380" data-thumbnail-height="280"></li>
+					<li data-thumbnail-text="">
+						<p class="largeLabel">VIMEO, YOUTUBE, HTML5 VIDEO!</p>
+						<p class="smallLabel">Revolution lightbox can load and play videos from Youtube, Vimeo or HTML5.</p>
+					</li>
+					<li data-info="">
+						<p class="mediaDescriptionHeader">VIMEO, YOUTUBE, HTML5 VIDEO!</p>
+						<p class="mediaDescriptionText">All you have to do is to include the link from YouTube, Vimeo or mp4 video that you want to display and the lightbox will display and play your video. The size (width and height) of each video can be set easily.</p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-url="http://vimeo.com/50747914" data-width="900" data-height="550"></li>
+					<li data-thumbnail-path="http://www.webdesign-flash.ro/p/s3dcov/load/media/thumbnails2/6.jpg" data-thumbnail-width="380" data-thumbnail-height="280"></li>
+					<li data-thumbnail-text="">
+						<p class="largeLabel">CUSTOMIZABLE SKIN AND COLOR</p>
+						<p class="smallLabel">The entire color theme can be modified.</p>
+					</li>
+					<li data-info="">
+						<p class="mediaDescriptionHeader">CUSTOMIZABLE SKIN AND COLOR.</p>
+						<p class="mediaDescriptionText">The entire color theme can be modified, and also the skin can be replaced with your own.</p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-type="media" data-url="http://www.webdesign-flash.ro/p/s3dcov/load/media/images2/5.jpg"></li>
+					<li data-thumbnail-path="http://www.webdesign-flash.ro/p/s3dcov/load/media/thumbnails2/5.jpg" data-thumbnail-width="280" data-thumbnail-height="380"></li>
+					<li data-thumbnail-text="">
+						<p class="largeLabel">TEXT FORMATTED WITH CSS</p>
+						<p class="smallLabel">Full css support, the thumbnails text can be formatted  with CSS.</p>
+					</li>
+					<li data-info="">
+						<p class="mediaDescriptionHeader">CUSTOM TEXT FORMATTED WITH CSS</p>
+						<p class="mediaDescriptionText">Full css support, the text which appear over the thumbnail can be formatted  with CSS.</p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-url="http://www.webdesign-flash.ro/iframe.html" data-width="900" data-height="650"></li>
+					<li data-thumbnail-path="http://www.webdesign-flash.ro/p/s3dcov/load/media/thumbnails2/9.jpg" data-thumbnail-width="380" data-thumbnail-height="280"></li>
+					<li data-thumbnail-text="">
+						<p class="largeLabel">IFRAME SUPPORT!</p>
+						<p class="smallLabel">The lightbox can load a HTML page and display it with ease.</p>
+					</li>
+					<li data-info="">
+						<p class="mediaDescriptionHeader">IFRAME SUPPORT!</p>
+						<p class="mediaDescriptionText">The lightbox can load a HTML page and display it with ease. All you have to do is to include the link of the HTML page and the lightbox will display it. The HTML page size (width and height) can be easily set.</p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-url="http://www.webdesign-flash.ro/p/s3dcov/load/media/flash/fwd.swf" data-width="800" data-height="500"></li>
+					<li data-thumbnail-path="http://www.webdesign-flash.ro/p/s3dcov/load/media/thumbnails2/1.jpg" data-thumbnail-width="280" data-thumbnail-height="380"></li>
+					<li data-thumbnail-text="">
+						<p class="largeLabel">CUSTOM THUMBNAIL ACTION</p>
+						<p class="smallLabel">When a thumbnail is pressed the coverflow can open a browser window or the lightbox.</p>
+					</li>
+					<li data-info="">
+						<p class="mediaDescriptionHeader">CUSTOM PRESS THUMBNAIL ACTION.</p>
+						<p class="mediaDescriptionText">When a thumbnail is pressed the coverflow can open a browser window or the lightbox.</p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-url="https://www.google.com/maps/embed/v1/place?q=castelul%20hunedoara&key=..." data-width="1100" data-height="650"></li>
+					<li data-thumbnail-path="http://www.webdesign-flash.ro/p/s3dcov/load/media/thumbnails2/2.jpg" data-thumbnail-width="280" data-thumbnail-height="380"></li>
+					<li data-thumbnail-text="">
+						<p class="largeLabel">THUMBNAILS DESCRIPTION</p>
+						<p class="smallLabel">Each thumbnail can have optional short description.</p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-url="link:http://www.google.com" data-target="_blank"></li>
+					<li data-thumbnail-path="http://www.webdesign-flash.ro/p/s3dcov/load/media/thumbnails2/10.jpg" data-thumbnail-width="380" data-thumbnail-height="280"></li>
+					<li data-thumbnail-text="">
+						<p class="largeLabel">CUSTOM THUMBNAIL ACTION</p>
+						<p class="smallLabel">When a thumbnail is pressed the coverflow can open a browser window or the lightbox.</p>
+					</li>
+					<li data-info="">
+						<p class="mediaDescriptionHeader">CUSTOM PRESS THUMBNAIL ACTION.</p>
+						<p class="mediaDescriptionText">When a thumbnail is pressed the coverflow can open a browser window or the lightbox.</p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-url="http://www.webdesign-flash.ro/p/s3dcov/load/media/images2/3.jpg"></li>
+					<li data-thumbnail-path="http://www.webdesign-flash.ro/p/s3dcov/load/media/thumbnails2/3.jpg" data-thumbnail-width="280" data-thumbnail-height="380"></li>
+					<li data-thumbnail-text="">
+						<p class="largeLabel">RESPONSIVE LAYOUT</p>
+						<p class="smallLabel">The coverflow has RESPONSIVE LAYOUT</p>
+					</li>
+					<li data-info="">
+						<p class="mediaDescriptionHeader">RESPONSIVE LAYOUT</p>
+						<p class="mediaDescriptionText">The coverflow has responsive layout, basically it has an adaptable layout which makes it the perfect candidate for any type of project.</p>
+					</li>
+				</ul>
+
+				<ul>
+					<li data-url="http://www.webdesign-flash.ro/p/s3dcov/load/media/videos/video-desktop.mp4,load/media/videos/video-mobile.mp4" data-poster-path="http://www.webdesign-flash.ro/p/s3dcov/load/media/posters/video-desktop.jpg" data-width="900" data-height="506"></li>
+					<li data-thumbnail-path="http://www.webdesign-flash.ro/p/s3dcov/load/media/thumbnails2/11.jpg" data-thumbnail-width="380" data-thumbnail-height="280"></li>
+					<li data-thumbnail-text="">
+						<p class="largeLabel">REVOLUTION LIGHTBOX INCLUDED</p>
+						<p class="smallLabel">Full blown multimedia responsive lightbox included.</p>
+					</li>
+					<li data-info="">
+						<p class="mediaDescriptionHeader">REVOLUTION LIGHTBOX INCLUDED.</p>
+						<p class="mediaDescriptionText">Full blown multimedia responsive lightbox included, it runs on all major browsers and mobile devices like iPhone, iPad, iOS, Android and Windows desktop or mobile. It has support for image (jpg, jpeg, png, video (mp4), audio (mp3), Vimeo, YouTube, iFrame, Google maps and flash.</p>
+					</li>
+				</ul>
+			</ul>
+			<!-- end  -->
+		</ul>
+		<!-- Imports required css and js files -->
+		<script type="text/javascript" src="FWDSimple3DCoverflow.js"></script>
+
+		<!-- Setup the coverflow (all settings are explained in detail in the documentation files) -->
+		<script type="text/javascript">
+			var coverflow;
+
+			FWDRLS3DUtils.onReady(function(){
+				setupCoverflow();
+			});
+
+			function setupCoverflow(){
+				coverflow = new FWDSimple3DCoverflow({
+
+					//required settings
+					coverflowHolderDivId:"myDiv",
+					coverflowDataListDivId:"playList2SingleCat",
+					displayType:"fluidwidth", //fixed
+					autoScale:"no",
+					coverflowWidth:940,
+					coverflowHeight:538,
+					mainFolderPath:"http://www.webdesign-flash.ro/p/s3dcov/load",
+					skinPath:"skin_black", // skin_white skin_modern_silver skin_black
+					initializeOnlyWhenVisible:"no",
+
+
+					//main settings
+					backgroundColor:"#000000",
+					backgroundImagePath:"",
+					backgroundRepeat:"repeat-x",
+					showDisplay2DAlways:"no",
+					coverflowStartPosition:"center",
+					coverflowTopology:"dualsided",
+					coverflowXRotation:0,
+					coverflowYRotation:0,
+					numberOfThumbnailsToDisplayLeftAndRight:"all",
+					infiniteLoop:"no",
+					rightClickContextMenu:"default",
+					useDragAndSwipe:"no",
+
+					//thumbnail settings
+					thumbnailWidth:500,
+					thumbnailHeight:366,
+					thumbnailXOffset3D:86,
+					thumbnailXSpace3D:78,
+					thumbnailZOffset3D:200,
+					thumbnailZSpace3D:93,
+					thumbnailYAngle3D:70,
+					thumbnailXOffset2D:20,
+					thumbnailXSpace2D:30,
+					thumbnailHoverOffset:100,
+					thumbnailBorderSize:0,
+					thumbnailOffsetY:-10,
+					thumbnailBackgroundColor:"#FFFFFF",
+					thumbnailBorderColor1:"#FFFFFF",
+					thumbnailBorderColor2:"#FFFFFF",
+					transparentImages:"no",
+					thumbnailsAlignment:"bottom", //bottom center
+					maxNumberOfThumbnailsOnMobile:13,
+					showThumbnailsGradient:"yes",
+					thumbnailGradientColor1:"rgba(0, 0, 0, 0)",
+					thumbnailGradientColor2:"rgba(0, 0, 0, 1)",
+					showText:"yes",
+					textOffset:10,
+					showThumbnailBoxShadow:"yes",
+					thumbnailBoxShadowCss:"0px 2px 2px #111111",
+					showTooltip:"no",
+					dynamicTooltip:"yes",
+					showReflection:"yes",
+					reflectionHeight:60,
+					reflectionDistance:0,
+					reflectionOpacity:.4,
+
+					//controls settings
+					slideshowDelay:5000,
+					autoplay:"no",
+					disableNextAndPrevButtonsOnMobile:"no",
+					controlsMaxWidth:650,
+					controlsPosition:"bottom",
+					controlsOffset:10,
+					showLargeNextAndPrevCoverflowButtons:"no",
+					largeNextAndPrevButtonsOffest:20,
+					showNextAndPrevCoverflowButtons:"yes",
+					showSlideshowButton:"yes",
+					showScrollbar:"yes",
+					showBulletsNavigation:"no",
+					bulletsNormalColor:"#333333",
+					bulletsSelectedColor:"#FFFFFF",
+					bulletsNormalRadius:5,
+					bulletsSelectedRadius:8,
+					spaceBetweenBullets:10,
+					bulletsOffset:14,
+					disableScrollbarOnMobile:"yes",
+					enableMouseWheelScroll:"yes",
+					scrollbarHandlerWidth:200,
+					scrollbarTextColorNormal:"#000000",
+					scrollbarTextColorSelected:"#000000",
+					addKeyboardSupport:"yes",
+
+					//categories settings
+					showCategoriesMenu:"yes",
+					startAtCategory:1,
+					categoriesMenuMaxWidth:700,
+					categoriesMenuOffset:25,
+					categoryColorNormal:"#999999",
+					categoryColorSelected:"#FFFFFF",
+
+					//lightbox settings
+					buttonsAlignment:"in",
+					itemBoxShadow:"none",
+					descriptionWindowAnimationType:"opacity",
+					descriptionWindowPosition:"bottom",
+					slideShowAutoPlay:"no",
+					addKeyboardSupport:"yes",
+					showCloseButton:"yes",
+					showShareButton:"yes",
+					showZoomButton:"yes",
+					showSlideShowButton:"yes",
+					showSlideShowAnimation:"yes",
+					showNextAndPrevButtons:"yes",
+					showNextAndPrevButtonsOnMobile:"yes",
+					showDescriptionButton:"yes",
+					showDescriptionByDefault:"no",
+					videoShowFullScreenButton:"yes",
+					videoAutoPlay:"yes",
+					nextVideoOrAudioAutoPlay:"yes",
+					videoLoop:"no",
+					audioAutoPlay:"no",
+					audioLoop:"no",
+					backgroundOpacity:.9,
+					descriptionWindowBackgroundOpacity:.95,
+					buttonsHideDelay:3,
+					slideShowDelay:4,
+					defaultItemWidth:640,
+					defaultItemHeight:480,
+					itemOffsetHeight:50,
+					spaceBetweenButtons:1,
+					buttonsOffsetIn:2,
+					buttonsOffsetOut:5,
+					itemBorderSize:0,
+					itemBorderRadius:0,
+					itemBackgroundColor:"#333333",
+					itemBorderColor:"#333333",
+					lightBoxBackgroundColor:"#000000",
+					descriptionWindowBackgroundColor:"#FFFFFF",
+					videoPosterBackgroundColor:"#0099FF",
+					videoControllerBackgroundColor:"#FFFFFF",
+					audioControllerBackgroundColor:"#FFFFFF",
+					timeColor:"#000000"
+				});
+			}
+
+			function setPreset(id)
+			{
+				switch (id)
+				{
+					case 1:
+						coverflow.setPreset([86, 78, 200, 93, 70, 100, 0, true, 0, true, 0, 0, "dualsided", "left", "rgba(0, 0, 0, 0)", "rgba(0, 0, 0, 1)"]);
+						break;
+					case 2:
+						coverflow.setPreset([80, 165, 400, 130, -40, 100, 0, true, 0, false, 0, 0, "dualsided", "left", "rgba(0, 0, 0, .4)", "rgba(0, 0, 0, 1)"]);
+						break;
+					case 3:
+						coverflow.setPreset([86, 78, 200, 93, 2, 100, 0, true, 0, false, 0, 0, "dualsided", "left", "rgba(0, 0, 0, .4)", "rgba(0, 0, 0, 1)"]);
+						break;
+					case 4:
+						coverflow.setPreset([100, 20, 150, 30, 60, 50, 0, true, 0, true, -15, 0, "dualsided", "left", "rgba(0, 0, 0, .4)", "rgba(0, 0, 0, 1)"]);
+						break;
+					case 5:
+						coverflow.setPreset([240, 0, 0, 20, 0, 0, 0, true, 0, true, -15, 0, "onesided", "left", "rgba(0, 0, 0, .2)", "rgba(0, 0, 0, 1)"]);
+						break;
+					case 6:
+						coverflow.setPreset([240, 0, 0, 20, 0, 0, 0, true, 0, true, -15, 0, "crosssided", "left", "rgba(0, 0, 0, 1)", "rgba(0, 0, 0, .2)"]);
+						break;
+					case 7:
+						coverflow.setPreset([100, 30, 150, 60, 60, 50, 0, true, 0, true, -3, 0, "frontonesided", "left", "rgba(0, 0, 0, 1)", "rgba(0, 0, 0, .2)"]);
+						break;
+					case 8:
+						coverflow.setPreset([86, 78, 200, 93, 70, 0, 0, true, 0, true, -10, 0, "accordion", "left", "rgba(0, 0, 0, 0)", "rgba(0, 0, 0, 0)"]);
+						break;
+					case 9:
+						coverflow.setPreset([86, 78, 200, 93, 70, 0, 0, true, 0, true, 0, -30, "flipping", "left", "rgba(0, 0, 0, 0)", "rgba(0, 0, 0, 0)"]);
+						break;
+				}
+			};
+
+		</script>
+	</body>
+</html>
